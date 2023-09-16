@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/sirtable.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+   *{
+    background-color: rgba(245, 227, 220, 0.988);
+    align-items: center;
+   }
+    h1{
+        color: blue;
+        text-decoration: underline;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    table{
+        background-color: rgb(228, 214, 214);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        
+        
+        
+        
+    }
+
+    th{
+        padding: 8px;
+        background-color: rgb(228, 218, 25);
+    }
+
+    td{
+        padding: 8px;
+        background-color: rgb(152, 235, 152);
+    }
+</style></head>
+
+<body>
+    <h1>OUR STUDENTS</h1>
+    <table>
+        <tbody><tr>
+            <th>No. Id</th>
+            <th> Student Name</th>
+            <th>Course Name</th>
+            <th>Image</th>
+        </tr>
+    
+        <tr>
+            <td id="demo1">1</td>
+            <td id="demo2">Bhavisha</td>
+            <td id="demo3">Full Stack</td>
+            
+            <td id="demo4"></td>
+        </tr>
+        <tr>
+            <td id="demo5">2</td>
+            <td id="demo6">Aseem</td>
+            <td id="demo7">Full Stack</td>
+            
+            <td id="demo8"></td>
+        </tr>
+        <tr>
+            <td id="demo9">3</td>
+            <td id="demo10">Devansh</td>
+            <td id="demo11">Android</td>
+            
+            <td id="demo12"></td>
+        </tr>
+        <tr>
+            <td id="demo13">4</td>
+            <td id="demo14">Renu</td>
+            <td id="demo15">Front End</td>
+            
+            <td id="demo16"></td>
+        </tr>
+        <tr>
+            <td id="demo17">5</td>
+            <td id="demo18">Chintan</td>
+            <td id="demo19">Mern Stack</td>
+            
+            <td id="demo20"></td>
+        </tr>
+        <tr>
+            <td id="demo21">6</td>
+            <td id="demo22">Ritika</td>
+            <td id="demo23">Web Design</td>
+            
+            <td id="demo24"></td>
+        </tr>
+        <tr>
+            <td id="demo25">7</td>
+            <td id="demo26">Salman</td>
+            <td id="demo27">Flutter</td>
+            
+            <td id="demo28"></td>
+        </tr>
+        <tr>
+            <td id="demo29">8</td>
+            <td id="demo30">Jay</td>
+            <td id="demo31">Python</td>
+            
+            <td id="demo32"></td>
+        </tr>
+        <tr>
+            <td id="demo33">9</td>
+            <td id="demo34">Om</td>
+            <td id="demo35">Machine Learning</td>
+            
+            <td id="demo36"></td>
+        </tr>
+        <tr>
+            <td id="demo37">10</td>
+            <td id="demo38">Suresh</td>
+            <td id="demo39">Django</td>
+            
+            <td id="demo40"></td>
+        </tr>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<script>
+const State = [{id:1,Name:"Bhavisha",Course:"Full Stack",image:""},{id:2,Name:"Aseem",Course:"Full Stack",image:""},
+{id:3,Name:"Devansh",Course:"Android",image:""},
+{id:4,Name:"Renu",Course:"Front End",image:""},{id:5,Name:"Chintan",Course:"Mern Stack",image:""},
+{id:6,Name:"Ritika",Course:"Web Design",image:""},{id:7,Name:"Salman",Course:"Flutter",image:""},
+{id:8,Name:"Jay",Course:"Python",image:""},{id:9,Name:"Om",Course:"Machine Learning",image:""},
+{id:10,Name:"Suresh",Course:"Django",image:""},
+]
+
+
+document.getElementById("demo1").innerHTML=State[0]["id"]
+    document.getElementById("demo2").innerHTML=State[0]["Name"]
+    document.getElementById("demo3").innerHTML=State[0]["Course"]
+    document.getElementById("demo4").innerHTML=State[0]["image"]
+    document.getElementById("demo5").innerHTML=State[1]["id"]
+    document.getElementById("demo6").innerHTML=State[1]["Name"]
+    document.getElementById("demo7").innerHTML=State[1]["Course"]
+    document.getElementById("demo8").innerHTML=State[1]["image"]
+    document.getElementById("demo9").innerHTML=State[2]["id"]
+    document.getElementById("demo10").innerHTML=State[2]["Name"]
+    document.getElementById("demo11").innerHTML=State[2]["Course"]
+    document.getElementById("demo12").innerHTML=State[2]["image"]
+    document.getElementById("demo13").innerHTML=State[3]["id"]
+    document.getElementById("demo14").innerHTML=State[3]["Name"]
+    document.getElementById("demo15").innerHTML=State[3]["Course"]
+    document.getElementById("demo16").innerHTML=State[3]["image"]
+    document.getElementById("demo17").innerHTML=State[4]["id"]
+    document.getElementById("demo18").innerHTML=State[4]["Name"]
+    document.getElementById("demo19").innerHTML=State[4]["Course"]
+    document.getElementById("demo20").innerHTML=State[4]["image"]
+    document.getElementById("demo21").innerHTML=State[5]["id"]
+    document.getElementById("demo22").innerHTML=State[5]["Name"]
+    document.getElementById("demo23").innerHTML=State[5]["Course"]
+    document.getElementById("demo24").innerHTML=State[5]["image"]
+    document.getElementById("demo25").innerHTML=State[6]["id"]
+    document.getElementById("demo26").innerHTML=State[6]["Name"]
+    document.getElementById("demo27").innerHTML=State[6]["Course"]
+    document.getElementById("demo28").innerHTML=State[6]["image"]
+    document.getElementById("demo29").innerHTML=State[7]["id"]
+    document.getElementById("demo30").innerHTML=State[7]["Name"]
+    document.getElementById("demo31").innerHTML=State[7]["Course"]
+    document.getElementById("demo32").innerHTML=State[7]["image"]
+    document.getElementById("demo33").innerHTML=State[8]["id"]
+    document.getElementById("demo34").innerHTML=State[8]["Name"]
+    document.getElementById("demo35").innerHTML=State[8]["Course"]
+    document.getElementById("demo36").innerHTML=State[8]["image"]
+    document.getElementById("demo37").innerHTML=State[9]["id"]
+    document.getElementById("demo38").innerHTML=State[9]["Name"]
+    document.getElementById("demo39").innerHTML=State[9]["Course"]
+    document.getElementById("demo40").innerHTML=State[9]["image"]
+</script>
+</tbody></table></body></html>
